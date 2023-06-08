@@ -19,7 +19,7 @@
         <img class="header-logo" src="./img/logo.svg" alt="Grand Player" />
       </h1>
     </header>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-container">
         <div class="hero-texts">
           <p class="hero-main-copy">
@@ -34,9 +34,9 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-container">
-        <h2 class="section-head">
+        <h2 class="section-head about-section-head">
           What is <span class="about-main-copy-red-accent">Grand</span>
           <span class="about-main-copy-yellow-accent">Players</span>?
         </h2>
@@ -51,9 +51,9 @@
         </div>
       </div>
     </section>
-    <section class="courses">
+    <section id="courses" class="courses">
       <div class="courses-container">
-        <h2 class="section-head">COURSES</h2>
+        <h2 class="section-head courses-section-head">COURSES</h2>
         <div class="courses-cards">
           <a class="courses-card-block" href="./index.html">
             <div class="course-card-thumbnail">
@@ -112,5 +112,71 @@
         </a>
       </div>
     </section>
+    <section id="application" class="application">
+      <div class="application-contaiter">
+        <h2 class="section-head application-section-head">Let's Try!</h2>
+        <p class="application-section-body">
+          Grand
+          Playersでは、ご利用登録いただけた方に対し、3レッスン分の無料枠をプレゼントいたします!
+          今すぐレッスンを初めて、”Grand”なプレイヤーを目指しましょう!
+          お申し込みは下記フォームからどうぞ！
+        </p>
+        <form class="application-form" action>
+          <div class="application-input-container">
+            <label class="application-label" for="username">お名前</label>
+            <input
+              class="application-input"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="エドワード ヴァン 太郎"
+            />
+            <label class="application-label" for="email">メールアドレス</label>
+            <input
+              class="application-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="grand.players@example.com"
+            />
+            <label class="application-label" for="guitar-experience"
+              >ギター歴(年)</label
+            >
+            <input
+              class="application-input"
+              type="number"
+              id="guitar-experience"
+              name="guitar-experience"
+              placeholder="3"
+              min="0"
+            />
+            <label class="application-label" for="ambition"
+              >意気込みをどうぞ！</label
+            >
+            <textarea
+              class="application-input"
+              type="text"
+              id="ambition"
+              name="ambition"
+              placeholder="イカすギターソロをかましてモテた～い！"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="big-button application-big-button">
+            <div class="big-button-label">送信する</div>
+            <div class="big-button-icon">
+              <img
+                class="big-button-icon-img"
+                src="./img/arrow-right.svg"
+                alt="send"
+              />
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-copyright">© 2023 GrandPlayers</div>
+    </footer>
   </body>
 </html>
